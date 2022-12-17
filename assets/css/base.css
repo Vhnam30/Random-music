@@ -1,0 +1,79 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #222;
+    --primary-color: #f3a952;
+}
+
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;;
+}
+
+/* Open & Close model */
+
+.open {
+    display: block;
+}
+
+.close {
+    display: none;
+}
+
+
+.open-fl {
+    display: flex;
+}
+
+
+/* Animation */
+
+@keyframes slideDown {
+    from 
+    {
+        top:-100px;
+        opacity: 0;
+    }
+    to 
+    {
+        top:0px;
+        opacity:1;
+    }
+  }
+
+  @keyframes slideLeft {
+    from 
+    {
+        right:-100%;
+        opacity: 0;
+    }
+    to 
+    {
+        right:0px;
+        opacity:1;
+    }
+  }
+
+  @keyframes slideRight {
+    
+    to 
+    {
+        right:0px;
+        opacity:1;
+    }
+    from 
+    {
+        left:-100%;
+        opacity: 0;
+    }
+  }
+
+
+

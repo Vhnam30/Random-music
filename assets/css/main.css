@@ -1,0 +1,393 @@
+/* header-nav */
+.header {
+  
+}
+
+.header-nav {
+    width: 100%;
+    height: 40px;
+    top: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nav-items {
+    color: var(--white-color);
+    padding: 20px 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+.nav-items_text {
+    font-size: 2rem;
+}
+
+.nav-items:hover .nav-items_text  {
+    opacity: 0.6;
+    transition: all .4s ease;
+}
+
+
+.main-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* nav function list */
+
+.nav-function {
+    position: relative;
+}
+
+.nav-function_list {
+    position: absolute;
+    left: 20px;
+    padding-left: 0;
+    display: none;
+}
+
+.nav-function:hover .nav-function_list {
+    display: block;
+}
+
+.nav-function_item {
+    min-width: 220px;
+    font-size: 1.8rem;
+    list-style: none;
+    padding: 10px;
+}
+
+
+.function-icon {
+    padding-left: 10px;
+}
+ 
+
+
+
+
+/* Media btn */
+
+.media-btn {
+    position: fixed;
+    bottom: 14%;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.media-play_icon,
+.media-pause_icon {
+    font-size: 5rem;
+    cursor: pointer;
+    color: var(--white-color);
+    
+}
+
+.media-prev_btn-wrap {
+    margin-right: 14px;
+}
+
+.media-next_btn-wrap {
+    margin-left: 14px;
+} 
+
+
+.media-next_icon,
+.media-prev_icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.media-pause_btn-wrap {
+    display: none;
+
+}
+
+.media-play_btn-wrap {
+    display: block;
+
+}
+
+
+.media-next_icon:hover,
+.media-prev_icon:hover,
+.media-play_icon:hover,
+.media-pause_icon:hover {
+    transition: all 0.4s ease;
+    color: var(--primary-color);
+}
+
+/* body */
+
+.body {
+    margin-top: 100px;
+   
+}
+
+/* nav volume btn */
+
+.nav-volume {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+}
+
+.nav-volume::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 55px;
+    left: -10px;
+
+}
+
+.nav-volume_circle {
+    width: 14px;
+    height: 14px;
+    background-color: #f3a952;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-volume:hover .nav-volume_circle {
+    display: block;
+    transition: all 1s ease;
+}
+
+.nav-volume:hover {
+    border-color:#f3a952;
+    transition: all 1s ease;
+}
+
+.nav-volume_option {
+    position: absolute;
+    display: flex;
+    width: 202px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: -19px;
+    left: -251px;
+    border-radius: 8px;
+}
+
+.nav-volume_icon {
+    color:#f3a952;
+    font-size: 2.2rem;
+}
+
+.nav-volume_btn {
+    -webkit-appearance: none; 
+    background-color: var(--primary-color);
+    width: calc(100% - 70px);
+    outline: none;
+    height: 10px;
+    opacity: 0.7;
+    border-radius: 8px;
+    -webkit-transition: .2s;    
+    transition: opacity .2s;
+    caret-color: red;
+}
+
+.nav-volume_btn:hover {
+    opacity: 1;
+}
+
+.nav-volume_btn::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px; 
+    height: 20px; 
+    background: var(--white-color); 
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(102, 102, 102, 0.3);
+}
+
+.nav-main_function {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 300px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: fixed;
+    right: 40px;
+    border-radius: 20px;
+    top: 40px;
+    border: 1px solid #222;
+    
+}
+
+
+/* nav function fullscreen */
+
+.nav-fullscreen {
+   
+}
+
+
+.fullscreen-btn {
+    color: white;
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+.fullscreen-btn:hover {
+    color: var(--primary-color);
+    transition: all .4s ease;
+}
+
+/* function rain sound */
+
+.rain-btn {
+  position: relative;
+}
+
+.rain-sound_icon {
+    font-size: 2.8rem;
+    color: var(--white-color);
+    position: relative;
+    cursor: pointer;
+
+}
+
+.rain-sound_icon:hover {
+    color: var(--primary-color);
+    transition: all .4s ease;  
+}
+
+.rain-sound_tab {
+
+    -webkit-appearance: none; 
+    background-color: var(--primary-color);
+    width: calc(100% - 70px);
+    outline: none;
+    height: 10px;
+    opacity: 0.7;
+    border-radius: 8px;
+    -webkit-transition: .2s;    
+    transition: opacity .2s;
+    caret-color: red;
+    cursor: pointer;
+
+}
+
+.rain-sound_tab:hover {
+    opacity: 1;
+}
+
+.rain-sound_tab::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px; 
+    height: 20px; 
+    background: var(--white-color); 
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(102, 102, 102, 0.3);
+}
+
+.rain-sound_option {
+    display: none;
+    position: absolute;
+  
+    width: 202px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: -19px;
+    left: -244px;
+    border-radius: 8px;
+}
+
+.rain-sound_icon:hover .rain-sound_option {
+    display: flex;
+}
+
+.rain-volume_icon {
+    color:#f3a952;
+    font-size: 2.2rem;
+}
+
+.rain-sound_icon::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 37px;
+    left: -45px;
+    top: -5px;
+}
+
+/* switch background */
+
+.switch-bg_btn {
+
+}
+
+.switch-bg_icon {
+    font-size: 2.8rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.switch-bg_icon:hover {
+    color: var(--primary-color);
+    transition: all .4s ease;  
+}
+
+/* mobile notice */
+
+.mobile-notice {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
